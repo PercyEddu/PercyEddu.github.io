@@ -1,44 +1,32 @@
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial;
+    background: #020617;
+    color: white;
+    overflow-x: hidden;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #0f172a;
-    color: #e2e8f0;
+/* NEON */
+.glow {
+    color: #0ff;
+    text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff;
 }
 
 /* NAV */
 header {
     position: fixed;
     width: 100%;
-    background: #020617;
-    padding: 15px 40px;
-    z-index: 1000;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-nav a {
-    color: #e2e8f0;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #38bdf8;
 }
 
 /* HERO */
@@ -48,53 +36,68 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #020617, #1e293b);
 }
 
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero p {
-    margin-top: 10px;
-    color: #38bdf8;
-}
-
-/* SECTIONS */
+/* SECCIONES */
 .section {
     padding: 100px 40px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.section h2 {
-    margin-bottom: 30px;
-    color: #38bdf8;
 }
 
 /* CARDS */
 .card {
-    background: #1e293b;
+    background: #0f172a;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: 1px solid #0ff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0ff;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    padding: 20px;
+    border: 1px solid #0ff;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.skill:hover {
+    box-shadow: 0 0 15px #0ff;
 }
 
-/* SKILLS */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+/* ICONOS */
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #0ff;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
+/* ANIMACIONES */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+
+/* PARTICLES */
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
