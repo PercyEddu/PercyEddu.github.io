@@ -3,77 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percy Olazabal Blas | FullStack .NET</title>
+    <title>Percy Olazabal Blas | FullStack</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
-<header>
+<canvas id="particles"></canvas>
+
+<header id="navbar">
     <nav>
-        <h2 class="logo">PO</h2>
+        <h2 class="logo glow">PO</h2>
         <ul>
             <li><a href="#about">Sobre mí</a></li>
             <li><a href="#experience">Experiencia</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Percy Olazabal</h1>
-    <p>Analista Programador .NET FullStack</p>
+    <h1 class="glow">Percy Olazabal</h1>
+    <p class="typing"></p>
 </section>
 
-<section id="about" class="section">
+<section id="about" class="section hidden">
     <h2>Sobre mí</h2>
-    <p>
-        Ingeniero de Sistemas con más de 12 años de experiencia en desarrollo de software,
-        especializado en tecnologías .NET, arquitectura de sistemas y desarrollo de APIs.
-        Experiencia en proyectos para banca, fintech y minería, trabajando bajo metodologías ágiles.
-    </p>
+    <p>Ingeniero de Sistemas con más de 12 años de experiencia en desarrollo .NET, APIs REST y arquitectura de software.</p>
 </section>
 
 <section id="experience" class="section">
-    <h2>Experiencia Profesional</h2>
 
-    <div class="card">
+    <h2>Experiencia</h2>
+
+    <div class="card hidden">
+        <i class="fa-solid fa-code icon"></i>
         <h3>Stefanini Group</h3>
-        <p><strong>.NET Developer / Analista Programador</strong> (2024 - 2025)</p>
-        <ul>
-            <li>Migración de frontend con Blazor y MDB5</li>
-            <li>Desarrollo de APIs REST y backend en .NET</li>
-            <li>Pruebas unitarias e integración</li>
-        </ul>
+        <p>Desarrollo FullStack, migraciones y APIs</p>
     </div>
 
-    <div class="card">
+    <div class="card hidden">
+        <i class="fa-solid fa-credit-card icon"></i>
         <h3>IZIPAY</h3>
-        <p><strong>Analista Programador Backend</strong> (2022 - 2025)</p>
-        <ul>
-            <li>Desarrollo de soluciones de pagos y tokenización</li>
-            <li>Integración con Apple Pay</li>
-            <li>Soporte post-producción y mejoras</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>MDP Consulting</h3>
-        <p><strong>FullStack Developer</strong> (2020 - 2022)</p>
-        <ul>
-            <li>Desarrollo de sistemas para banca y minería</li>
-            <li>Arquitectura y diseño técnico</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Tempus Sistemas Inteligentes</h3>
-        <p><strong>Analista Programador</strong> (2014 - 2017)</p>
-        <ul>
-            <li>Desarrollo de sistemas de control de acceso</li>
-            <li>Integración de bases de datos</li>
-        </ul>
+        <p>Sistemas de pagos y tokenización</p>
     </div>
 
 </section>
@@ -81,43 +57,30 @@
 <section id="skills" class="section">
     <h2>Skills</h2>
 
-    <div class="skills-container">
-        <div>
-            <h4>Backend</h4>
-            <p>C#, .NET Core, API REST, Entity Framework</p>
+    <div class="skills">
+
+        <div class="skill hidden">
+            <i class="fa-brands fa-microsoft icon"></i>
+            <p>.NET / C#</p>
         </div>
 
-        <div>
-            <h4>Frontend</h4>
-            <p>JavaScript, HTML5, CSS3, Blazor, React</p>
+        <div class="skill hidden">
+            <i class="fa-brands fa-js icon"></i>
+            <p>JavaScript</p>
         </div>
 
-        <div>
-            <h4>Base de Datos</h4>
-            <p>SQL Server, Oracle, PostgreSQL, MongoDB</p>
+        <div class="skill hidden">
+            <i class="fa-solid fa-database icon"></i>
+            <p>SQL / MongoDB</p>
         </div>
 
-        <div>
-            <h4>DevOps</h4>
-            <p>Azure, Docker, Kubernetes, Git</p>
+        <div class="skill hidden">
+            <i class="fa-brands fa-docker icon"></i>
+            <p>Docker</p>
         </div>
 
-        <div>
-            <h4>Metodologías</h4>
-            <p>SCRUM, Agile</p>
-        </div>
     </div>
 </section>
-
-<section id="contact" class="section">
-    <h2>Contacto</h2>
-    <p>Email: polazabalblas@gmail.com</p>
-    <p>Teléfono: 993 361 384</p>
-</section>
-
-<footer>
-    <p>© 2026 Percy Olazabal</p>
-</footer>
 
 <script src="script.js"></script>
 </body>
