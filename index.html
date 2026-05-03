@@ -1,87 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percy Olazabal Blas | FullStack</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+<title>Percy Olazabal | Senior .NET Engineer</title>
 
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
-<canvas id="particles"></canvas>
-
-<header id="navbar">
-    <nav>
-        <h2 class="logo glow">PO</h2>
-        <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
-    </nav>
+<header class="nav">
+    <div class="container nav-content">
+        <h2 class="logo">PO</h2>
+        <div>
+            <a href="#experience">Experiencia</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#skills">Skills</a>
+        </div>
+    </div>
 </header>
 
-<section class="hero">
-    <h1 class="glow">Percy Olazabal</h1>
-    <p class="typing"></p>
+<section class="hero container">
+    <h1>Senior .NET Engineer</h1>
+    <p>
+        Desarrollo de soluciones escalables, APIs de alto rendimiento y arquitectura moderna.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="btn primary">Ver proyectos</a>
+        <a href="#" class="btn secondary">Descargar CV</a>
+    </div>
 </section>
 
-<section id="about" class="section hidden">
-    <h2>Sobre mí</h2>
-    <p>Ingeniero de Sistemas con más de 12 años de experiencia en desarrollo .NET, APIs REST y arquitectura de software.</p>
-</section>
-
-<section id="experience" class="section">
-
+<section id="experience" class="section container">
     <h2>Experiencia</h2>
 
-    <div class="card hidden">
-        <i class="fa-solid fa-code icon"></i>
-        <h3>Stefanini Group</h3>
-        <p>Desarrollo FullStack, migraciones y APIs</p>
-    </div>
+    <div class="timeline">
 
-    <div class="card hidden">
-        <i class="fa-solid fa-credit-card icon"></i>
-        <h3>IZIPAY</h3>
-        <p>Sistemas de pagos y tokenización</p>
-    </div>
+        <div class="timeline-item">
+            <span>2024 - 2025</span>
+            <h3>Stefanini Group</h3>
+            <p>Desarrollo FullStack con .NET 8, Blazor y Azure. Migración de sistemas y optimización de rendimiento.</p>
+        </div>
 
+        <div class="timeline-item">
+            <span>2022 - 2025</span>
+            <h3>IZIPAY</h3>
+            <p>Plataformas de pagos, tokenización y APIs financieras de alta disponibilidad.</p>
+        </div>
+
+        <div class="timeline-item">
+            <span>2020 - 2022</span>
+            <h3>MDP Consulting</h3>
+            <p>Soluciones empresariales para banca y minería con arquitectura escalable.</p>
+        </div>
+
+    </div>
 </section>
 
-<section id="skills" class="section">
+<section id="projects" class="section container">
+    <h2>Proyectos Destacados</h2>
+
+    <div class="grid">
+
+        <div class="project-card">
+            <h3>Plataforma de Pagos</h3>
+            <p>Arquitectura basada en microservicios con .NET Core y Azure.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Tokenización Financiera</h3>
+            <p>Sistema seguro para procesamiento de transacciones digitales.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Control de Accesos</h3>
+            <p>Aplicación empresarial con APIs REST y frontend moderno.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills" class="section container">
     <h2>Skills</h2>
 
     <div class="skills">
 
-        <div class="skill hidden">
-            <i class="fa-brands fa-microsoft icon"></i>
-            <p>.NET / C#</p>
+        <div class="skill">
+            <span>Backend</span>
+            <p>.NET Core, C#, APIs REST</p>
         </div>
 
-        <div class="skill hidden">
-            <i class="fa-brands fa-js icon"></i>
-            <p>JavaScript</p>
+        <div class="skill">
+            <span>Frontend</span>
+            <p>JavaScript, Blazor, React</p>
         </div>
 
-        <div class="skill hidden">
-            <i class="fa-solid fa-database icon"></i>
-            <p>SQL / MongoDB</p>
+        <div class="skill">
+            <span>Cloud</span>
+            <p>Azure, Docker, Kubernetes</p>
         </div>
 
-        <div class="skill hidden">
-            <i class="fa-brands fa-docker icon"></i>
-            <p>Docker</p>
+        <div class="skill">
+            <span>Database</span>
+            <p>SQL Server, Oracle, MongoDB</p>
         </div>
 
     </div>
 </section>
 
+<footer class="footer">
+    <p>© 2026 Percy Olazabal</p>
+</footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
